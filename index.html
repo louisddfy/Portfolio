@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Louis Deflechy</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Petites animations personnalisées */
+        .fade-in {
+            animation: fadeIn 1s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body class="bg-gray-50 font-sans text-gray-900 leading-relaxed">
+
+    <header class="bg-white/90 backdrop-blur-md border-b border-gray-200 sticky top-0 z-50 transition-all duration-300">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold text-gray-800 flex items-center gap-3">
+                <img src="image/louisdeflechy.JPG" alt="Louis Deflechy" class="w-10 h-10 rounded-full object-cover shadow-sm">
+                <a href="#home" class="hover:text-blue-600 transition">Louis Deflechy</a>
+            </div>
+            <ul class="hidden md:flex space-x-8 font-medium text-gray-600">
+                <li><a href="#portfolio" class="hover:text-blue-600 transition">Compétences</a></li>
+                <li><a href="#entreprise" class="hover:text-blue-600 transition">Entreprise</a></li>
+                <li><a href="#projets" class="hover:text-blue-600 transition">Projets</a></li>
+                <li><a href="#veille" class="hover:text-blue-600 transition">Veille</a></li>
+                <li><a href="#contact" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition shadow-md">Me Contacter</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container mx-auto px-6 max-w-7xl">
+
+        <section id="home" class="min-h-[90vh] flex flex-col justify-center items-center text-center py-20 fade-in">
+            <div class="mb-8">
+                <img src="image/louisdeflechy.JPG" alt="Louis Deflechy" class="w-48 h-48 rounded-full object-cover border-4 border-white shadow-2xl">
+            </div>
+            
+            <h1 class="text-5xl md:text-6xl font-extrabold text-gray-800 mb-4 tracking-tight">
+                Bonjour, je suis <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">Louis</span>
+            </h1>
+            <p class="text-2xl text-gray-600 font-light mb-6">Étudiant en BTS SIO option SLAM</p>
+            <p class="max-w-2xl mx-auto text-gray-600 text-lg leading-relaxed mb-10">
+                Passionné par le développement d'applications et l'analyse de données. J'aide les entreprises à transformer leurs besoins en solutions numériques performantes.
+            </p>
+            <div class="flex gap-4">
+                <a href="#projets" class="bg-gray-800 text-white px-8 py-3 rounded-full text-lg hover:bg-gray-900 hover:shadow-lg transition transform hover:-translate-y-1">Voir mes projets</a>
+                <a href="image/CV Louis.pdf" class="bg-white text-gray-800 border border-gray-300 px-8 py-3 rounded-full text-lg hover:bg-gray-50 hover:border-gray-400 transition">Télécharger CV</a>
+            </div>
+        </section>
+
+        <section id="portfolio" class="py-20">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-16 relative">
+                <span class="bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-indigo-600">Compétences & Outils</span>
+            </h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-2xl shadow-lg p-8 hover:shadow-xl transition duration-300 border-t-4 border-blue-500">
+                    <div class="flex items-center mb-4">
+                        <div class="p-3 bg-blue-100 rounded-lg text-blue-600 mr-4">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
+                        </div>
+                        <h4 class="font-bold text-xl text-gray-800">Développement</h4>
+                    </div>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm font-medium">PHP</span>
+                        <span class="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm font-medium">HTML5</span>
+                        <span class="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm font-medium">CSS3</span>
+                        <span class="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm font-medium">Python</span>
+                        <span class="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm font-medium">SQL</span>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-2xl shadow-lg p-8 hover:shadow-xl transition duration-300 border-t-4 border-green-500">
+                    <div class="flex items-center mb-4">
+                        <div class="p-3 bg-green-100 rounded-lg text-green-600 mr-4">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path></svg>
+                        </div>
+                        <h4 class="font-bold text-xl text-gray-800">Frameworks & Style</h4>
+                    </div>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-green-50 text-green-700 rounded-full text-sm font-medium">Tailwind CSS</span>
+                        <span class="px-3 py-1 bg-green-50 text-green-700 rounded-full text-sm font-medium">Bootstrap</span>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-2xl shadow-lg p-8 hover:shadow-xl transition duration-300 border-t-4 border-yellow-500">
+                    <div class="flex items-center mb-4">
+                        <div class="p-3 bg-yellow-100 rounded-lg text-yellow-600 mr-4">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                        </div>
+                        <h4 class="font-bold text-xl text-gray-800">Outils & Data</h4>
+                    </div>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-yellow-50 text-yellow-800 rounded-full text-sm font-medium">Git / GitHub</span>
+                        <span class="px-3 py-1 bg-yellow-50 text-yellow-800 rounded-full text-sm font-medium">VS Code</span>
+                        <span class="px-3 py-1 bg-yellow-50 text-yellow-800 rounded-full text-sm font-medium">Figma</span>
+                        <span class="px-3 py-1 bg-yellow-50 text-yellow-800 rounded-full text-sm font-medium">Qlik Sense</span>
+                        <span class="px-3 py-1 bg-yellow-50 text-yellow-800 rounded-full text-sm font-medium">PowerBI</span>
+                        <span class="px-3 py-1 bg-yellow-50 text-yellow-800 rounded-full text-sm font-medium">IA (Gemini/GPT)</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-lg p-8 mt-8 flex flex-col md:flex-row items-center gap-6">
+                <img src="image/ingetis.png" alt="Logo Ingetis" class="w-24 h-auto object-contain">
+                <div>
+                    <h4 class="font-bold text-xl text-gray-800">Formation : Ingetis - Paris 5</h4>
+                    <p class="text-blue-600 font-medium">BTS Services Informatiques aux Organisations (SIO)</p>
+                    <p class="text-gray-600 mt-1">Option Solutions Logicielles et Applications Métiers (SLAM)</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="entreprise" class="py-20">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-16">Expérience Professionnelle</h2>
+            
+            <div class="bg-white rounded-2xl shadow-xl overflow-hidden flex flex-col md:flex-row">
+                <div class="bg-gray-100 md:w-1/4 p-10 flex items-center justify-center">
+                    <img src="image/datanalyse_logo.jpeg" alt="Logo Datanalyse" class="w-full max-w-[150px] mix-blend-multiply">
+                </div>
+                
+                <div class="p-8 md:p-10 md:w-3/4">
+                    <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-4">
+                        <h3 class="text-2xl font-bold text-gray-800">DATANALYSE</h3>
+                        <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-3 py-1 rounded-full mt-2 md:mt-0">Août 2024 - Présent</span>
+                    </div>
+                    
+                    <p class="text-lg font-medium text-gray-700 mb-4">Alternant Data Analyste</p>
+                    <p class="text-gray-600 mb-6 italic">
+                        Développement des compétences en manipulation, nettoyage et mise en valeur de la donnée pour faciliter la prise de décision.
+                    </p>
+                    
+                    <div class="mb-6">
+                        <h4 class="font-bold text-gray-800 mb-3 border-b pb-2">Missions Principales :</h4>
+                        <ul class="space-y-2">
+                            <li class="flex items-start">
+                                <span class="text-blue-500 mr-2 mt-1">✓</span>
+                                <span class="text-gray-700">Intégration de données hétérogènes (SQL, Excel) et structuration pour Dashboards Qlik.</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-blue-500 mr-2 mt-1">✓</span>
+                                <span class="text-gray-700">Conception complète d'un tableau de bord de pilotage pour une PME.</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-blue-500 mr-2 mt-1">✓</span>
+                                <span class="text-gray-700">Optimisation des performances et debugging d'applications Qlik Sense.</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-blue-500 mr-2 mt-1">✓</span>
+                                <span class="text-gray-700">Participation à la migration On-premise vers Cloud (Grand compte international).</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="flex gap-2 flex-wrap">
+                        <span class="px-2 py-1 bg-gray-100 text-gray-600 text-xs rounded border border-gray-200">SQL</span>
+                        <span class="px-2 py-1 bg-gray-100 text-gray-600 text-xs rounded border border-gray-200">Qlik Sense</span>
+                        <span class="px-2 py-1 bg-gray-100 text-gray-600 text-xs rounded border border-gray-200">PowerBI</span>
+                        <span class="px-2 py-1 bg-gray-100 text-gray-600 text-xs rounded border border-gray-200">ETL</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projets" class="py-20 bg-gray-50">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-16">Mes Projets</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                
+                <article class="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition duration-300 overflow-hidden flex flex-col h-full transform hover:-translate-y-2">
+                    <div class="h-4 bg-green-500 w-full"></div> <div class="p-8 flex-grow">
+                        <div class="flex justify-between items-start mb-4">
+                            <h3 class="text-2xl font-bold text-gray-800">Projet Zoo</h3>
+                            <span class="text-xs font-semibold text-gray-400 border border-gray-200 px-2 py-1 rounded">Fevrier 2025</span>
+                        </div>
+                        <p class="text-gray-600 mb-6">
+                            Application web complète permettant aux employés de gérer l'écosystème du zoo : gestion des animaux, des enclos, assignation des soigneurs et suivi des espèces.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-xs font-bold">PHP</span>
+                            <span class="px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-xs font-bold">HTML/CSS</span>
+                        </div>
+                    </div>
+                    <div class="bg-gray-50 px-8 py-4 border-t border-gray-100">
+                        <a href="http://localhost/ZooProject/login.html" class="flex items-center text-blue-600 font-semibold hover:text-blue-800 group">
+                            Voir le détail
+                            <svg class="w-4 h-4 ml-2 group-hover:translate-x-1 transition" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition duration-300 overflow-hidden flex flex-col h-full transform hover:-translate-y-2">
+                    <div class="h-4 bg-indigo-500 w-full"></div>
+                    <div class="p-8 flex-grow">
+                        <div class="flex justify-between items-start mb-4">
+                            <h3 class="text-2xl font-bold text-gray-800">Vente Groupée (Client Léger)</h3>
+                            <span class="text-xs font-semibold text-gray-400 border border-gray-200 px-2 py-1 rounded">Oct 2025</span>
+                        </div>
+                        <p class="text-gray-600 mb-6">
+                            Plateforme e-commerce spécialisée. Gestion complexe des droits utilisateurs (Gestionnaire, Vendeur, Client), catalogue produits et paniers partagés.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="px-3 py-1 bg-indigo-50 text-indigo-700 rounded-full text-xs font-bold">HTML/CSS</span>
+                            <span class="px-3 py-1 bg-indigo-50 text-indigo-700 rounded-full text-xs font-bold">PHP/Event</span>
+                            <span class="px-3 py-1 bg-indigo-50 text-indigo-700 rounded-full text-xs font-bold">Auth</span>
+                            <span class="px-3 py-1 bg-indigo-50 text-indigo-700 rounded-full text-xs font-bold">Droits</span>
+                        </div>
+                    </div>
+                    <div class="bg-gray-50 px-8 py-4 border-t border-gray-100">
+                        <a href="http://localhost/De%cc%81v%202.1/Projet%20Groupe/Utilisateur/connexion.php" class="flex items-center text-blue-600 font-semibold hover:text-blue-800 group">
+                            Voir le détail
+                            <svg class="w-4 h-4 ml-2 group-hover:translate-x-1 transition" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition duration-300 overflow-hidden flex flex-col h-full transform hover:-translate-y-2">
+                    <div class="h-4 bg-yellow-500 w-full"></div>
+                    <div class="p-8 flex-grow">
+                        <div class="flex justify-between items-start mb-4">
+                            <h3 class="text-2xl font-bold text-gray-800">ClashStats Webapp</h3>
+                            <span class="text-xs font-semibold text-gray-400 border border-gray-200 px-2 py-1 rounded">Déc 2025</span>
+                        </div>
+                        <p class="text-gray-600 mb-6">
+                            Dashboard analytique pour le jeu Clash of Clans. Connexion API externe, traitement des JSON et visualisation des statistiques joueurs/clans.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="px-3 py-1 bg-yellow-50 text-yellow-700 rounded-full text-xs font-bold">API</span>
+                            <span class="px-3 py-1 bg-yellow-50 text-yellow-700 rounded-full text-xs font-bold">JS / Chart.js</span>
+                            <span class="px-3 py-1 bg-yellow-50 text-yellow-700 rounded-full text-xs font-bold">VibeCoding</span>
+                        </div>
+                    </div>
+                    <div class="bg-gray-50 px-8 py-4 border-t border-gray-100">
+                        <a href="http://localhost/ClashOfStats/" class="flex items-center text-blue-600 font-semibold hover:text-blue-800 group">
+                            Voir le détail
+                            <svg class="w-4 h-4 ml-2 group-hover:translate-x-1 transition" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="bg-white rounded-2xl shadow-lg border-2 border-dashed border-gray-300 flex flex-col justify-center items-center text-center p-8 opacity-75 hover:opacity-100 transition">
+                    <div class="bg-gray-100 p-4 rounded-full mb-4">
+                        <svg class="w-8 h-8 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Projet Client Lourd</h3>
+                    <p class="text-gray-500 mb-4">À venir - Janvier 2026</p>
+                    <span class="px-3 py-1 bg-gray-100 text-gray-500 rounded-full text-xs font-medium">C# / Java</span>
+                </article>
+
+            </div>
+        </section>
+
+        <section id="veille" class="py-20">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-16">Veille Technologique</h2>
+            
+            <div class="bg-white rounded-2xl shadow-lg p-8 md:p-12 hover:shadow-xl transition flex flex-col md:flex-row gap-8 items-center">
+                <div class="md:w-1/3 bg-blue-100 rounded-xl p-6 flex justify-center items-center h-full">
+                     <svg class="w-24 h-24 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 002 2h2a2 2 0 002-2z"></path></svg>
+                </div>
+                <div class="md:w-2/3">
+                    <span class="text-blue-600 font-bold uppercase text-sm tracking-wide">Sujet Actuel</span>
+                    <h3 class="text-2xl font-bold text-gray-800 mt-2 mb-4">La Data dans le sport : Performance & Prédiction</h3>
+                    <p class="text-gray-600 text-lg mb-6">
+                        Analyse approfondie de l'impact du Big Data sur les stratégies sportives. Comment les modèles prédictifs (Machine Learning) permettent aujourd'hui d'anticiper les blessures et d'optimiser les recrutements.
+                    </p>
+                    <div class="flex items-center justify-between border-t pt-6">
+                        <span class="text-sm text-gray-500">Mise à jour : Octobre 2025</span>
+                        <a href="veille.html" class="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition shadow">Lire l'article complet</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="py-20 text-center">
+            <h2 class="text-3xl font-bold text-gray-800 mb-8">Envie de collaborer ?</h2>
+            <p class="text-xl text-gray-600 mb-8">Je suis toujours ouvert aux nouvelles opportunités et aux échanges intéressants.</p>
+            <a href="mailto:lsdeflechy@gmail.com" class="text-2xl font-semibold text-blue-600 hover:underline">lsdeflechy@gmail.com</a>
+        </section>
+
+    </main>
+
+    <footer class="bg-gray-900 text-white text-center py-8 mt-12">
+        <div class="container mx-auto px-6">
+            <p class="mb-4">&copy; 2025 Louis Deflechy. Tous droits réservés.</p>
+            <div class="flex justify-center space-x-6 text-gray-400">
+                <a href="https://www.linkedin.com/in/louis-deflechy/" class="hover:text-white transition">LinkedIn</a>
+                <a href="https://github.com/louisddfy" class="hover:text-white transition">GitHub</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
