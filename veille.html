@@ -28,13 +28,65 @@
         </nav>
     </header>
 
+    
     <main class="container mx-auto px-6 max-w-5xl py-12 fade-in">
-        
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-6 mb-16 fade-in">
+            
+            <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-200 md:col-span-8">
+                <h2 class="text-lg font-bold text-gray-800 mb-3 flex items-center gap-2">
+                    <svg class="w-5 h-5 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    Qu'est-ce que la veille technologique ?
+                </h2>
+                <p class="text-sm text-gray-600 leading-relaxed text-justify">
+                    La veille technologique, élément de la veille stratégique, consiste à surveiller les évolutions techniques et les innovations dans un secteur d’activité donné. Elle comprend notamment la surveillance, la collecte, le partage et la diffusion d’information permettant d’anticiper des changements (R&D, brevets, nouveaux produits, etc.).
+                    <br><span class="block mt-2 text-blue-600 font-medium">Son but : Évaluer l'impact sur l'environnement et l'organisation.</span>
+                </p>
+            </div>
+
+            <div class="bg-gray-50 p-6 rounded-xl shadow-inner border border-gray-200 md:col-span-4 flex flex-col justify-center">
+                <h3 class="text-sm font-bold text-gray-800 uppercase tracking-wide mb-4">🛠 Mes outils de surveillance</h3>
+              <ul class="space-y-3">
+    <li class="flex items-center gap-3">
+        <span class="bg-blue-100 text-blue-700 p-1.5 rounded-lg">
+            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+        </span>
+        <div>
+            <span class="text-sm font-semibold text-gray-900 block">LinkedIn</span>
+            <span class="text-xs text-gray-500">Suivi d'experts (Data Analysts, Clubs)</span>
+        </div>
+    </li>
+    <li class="flex items-center gap-3">
+        <span class="bg-red-100 text-red-700 p-1.5 rounded-lg">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"></path></svg>
+        </span>
+        <div>
+            <span class="text-sm font-semibold text-gray-900 block">Google Alerts</span>
+            <span class="text-xs text-gray-500">Mots clés : "Sports Analytics", "Big Data"</span>
+        </div>
+    </li>
+</ul>
+            </div>
+
+            <div class="bg-blue-600 text-white p-6 rounded-xl shadow-lg md:col-span-12 flex flex-col md:flex-row items-center justify-between gap-6">
+                <div class="flex-1">
+                    <h3 class="text-blue-100 font-bold uppercase text-xs tracking-wider mb-2">Thématique choisie</h3>
+                    <p class="text-xl font-bold">L'impact de la Data Science sur la performance sportive</p>
+                    <p class="text-blue-100 text-sm mt-2 opacity-90">
+                        Ma problématique : <em class="font-medium">"Comment les algorithmes prédictifs transforment-ils la prise de décision dans le sport de haut niveau ?"</em>
+                    </p>
+                </div>
+                <div class="hidden md:block">
+                     <span class="bg-white/20 px-4 py-2 rounded-lg text-sm font-medium backdrop-blur-sm">Veille Active</span>
+                </div>
+            </div>
+
+        </div>
+      
         <div class="text-center mb-16">
             <span class="text-blue-600 font-bold tracking-wider uppercase text-sm">BTS SIO - SLAM</span>
             <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mt-2 mb-6">La Data Science dans le Sport</h1>
             <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-                Comment l'analyse de données (Big Data, IA) transforme la performance sportive, du recrutement des joueurs à la prévention des blessures.
+                De la "Sabermétrie" à l'IA prédictive : comment les algorithmes transforment le recrutement et la santé des athlètes.
             </p>
             
             <div class="mt-8 flex flex-wrap justify-center gap-4">
@@ -53,114 +105,80 @@
 
             <div class="relative pl-8 md:pl-12">
                 <div class="absolute -left-3 top-0 bg-blue-600 h-6 w-6 rounded-full border-4 border-white shadow"></div>
-                
                 <span class="text-sm font-bold text-blue-600 uppercase mb-2 block">Septembre 2025</span>
-                <h3 class="text-2xl font-bold text-gray-800 mb-3">Définition du sujet et bases historiques</h3>
-                
+                <h3 class="text-2xl font-bold text-gray-800 mb-3">Définition & Bases historiques</h3>
                 <div class="bg-white p-6 rounded-xl shadow-md border border-gray-100 hover:shadow-lg transition">
-                    <p class="text-gray-700 mb-4">
-                        Pour débuter ma veille, je me suis intéressé aux origines de l'analyse de données dans le sport. Tout part de la <strong>Sabermétrie</strong>, une approche statistique appliquée au baseball rendue célèbre par le film "Moneyball".
-                    </p>
-                    <p class="text-gray-700 mb-4">
-                        J'ai défini le périmètre de ma veille sur deux axes principaux : 
-                        <ul class="list-disc list-inside ml-4 mt-2 text-gray-600">
-                            <li>L'optimisation de la performance (Scouting/Tactique).</li>
-                            <li>La santé des athlètes (Prédiction de blessures).</li>
-                        </ul>
+                    <p class="text-gray-700">
+                        Début de ma veille en m'intéressant aux origines : la <strong>Sabermétrie</strong> (Baseball). J'ai défini mon périmètre de recherche sur l'optimisation de la performance et l'analyse prédictive.
                     </p>
                     <div class="mt-4 flex gap-2">
-                        <span class="px-2 py-1 bg-gray-100 text-xs rounded text-gray-500">#Histoire</span>
-                        <span class="px-2 py-1 bg-gray-100 text-xs rounded text-gray-500">#Sabermétrie</span>
+                        <span class="px-2 py-1 bg-gray-100 text-xs rounded text-gray-500">#Moneyball</span>
+                        <span class="px-2 py-1 bg-gray-100 text-xs rounded text-gray-500">#Statistiques</span>
                     </div>
                 </div>
             </div>
 
             <div class="relative pl-8 md:pl-12">
                 <div class="absolute -left-3 top-0 bg-blue-600 h-6 w-6 rounded-full border-4 border-white shadow"></div>
-                
                 <span class="text-sm font-bold text-blue-600 uppercase mb-2 block">Octobre 2025</span>
-                <h3 class="text-2xl font-bold text-gray-800 mb-3">L'impact de la Data sur le Recrutement</h3>
-                
+                <h3 class="text-2xl font-bold text-gray-800 mb-3">L'impact de la Data sur le Scouting</h3>
                 <div class="bg-white p-6 rounded-xl shadow-md border border-gray-100 hover:shadow-lg transition">
-                    <div class="flex items-start gap-4">
+                    <p class="text-gray-700 mb-2">
+                        Lecture d'un article de <strong>Morgan Philips</strong> sur l'objectivation du recrutement. La data permet de mesurer des "invisibles" : distance parcourue, qualité des appuis, vision du jeu.
+                    </p>
+                    <a href="https://insights.morganphilips.com/fr/le-role-predominant-de-la-data-dans-le-sport" target="_blank" class="text-blue-600 hover:underline text-sm font-medium">Lire l'article source →</a>
+                </div>
+            </div>
+
+            <div class="relative pl-8 md:pl-12">
+                <div class="absolute -left-3 top-0 bg-indigo-600 h-6 w-6 rounded-full border-4 border-white shadow"></div>
+                
+                <span class="text-sm font-bold text-indigo-600 uppercase mb-2 block">Novembre 2025</span>
+                <h3 class="text-2xl font-bold text-gray-800 mb-3">Gamification : Partenariat AS Monaco x Football Manager</h3>
+                
+                <div class="bg-white p-6 rounded-xl shadow-md border-l-4 border-indigo-500 hover:shadow-lg transition">
+                    <div class="flex flex-col md:flex-row gap-4">
                         <div class="flex-1">
                             <p class="text-gray-700 mb-4">
-                                J'ai analysé comment les clubs utilisent la data pour éviter les erreurs de casting. Selon un article de <strong>Morgan Philips</strong>, la data permet d'objectiver le recrutement. Elle aide à valider des intuitions mais surtout à mesurer des paramètres invisibles à l'œil nu (distance parcourue, zones d'influence).
+                                Un tournant intéressant repéré ce mois-ci : l'utilisation de bases de données de jeux vidéo pour le monde professionnel. L'<strong>AS Monaco</strong> utilise désormais la base de données de <strong>Football Manager</strong> (Sports Interactive) pour son recrutement.
                             </p>
-                            <p class="text-gray-700 font-medium">
-                                "La data permet aussi de distance parcourue, un mauvais appui..."
+                            <p class="text-gray-700 mb-4 font-medium">
+                                Le point clé : Ce n'est pas que pour les joueurs, mais aussi pour le <span class="text-indigo-600">recrutement du Staff Technique</span>.
                             </p>
-                            <a href="https://insights.morganphilips.com/fr/le-role-predominant-de-la-data-dans-le-sport" target="_blank" class="inline-flex items-center mt-4 text-blue-600 hover:text-blue-800 text-sm font-semibold">
-                                Lire l'article source
-                                <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
-                            </a>
+                            <p class="text-sm text-gray-600 bg-gray-50 p-3 rounded">
+                                <strong class="block mb-1">Pourquoi c'est pertinent techniquement ?</strong>
+                                La BDD de Football Manager contient plus de <strong>800 000 entrées</strong> (Big Data) mises à jour par un réseau mondial de scouts. Les clubs s'en servent pour filtrer des profils d'analystes vidéo ou de data scientists introuvables via les canaux classiques.
+                            </p>
                         </div>
+                        
                     </div>
                 </div>
             </div>
 
             <div class="relative pl-8 md:pl-12">
                 <div class="absolute -left-3 top-0 bg-blue-600 h-6 w-6 rounded-full border-4 border-white shadow"></div>
-                
-                <span class="text-sm font-bold text-blue-600 uppercase mb-2 block">Novembre 2025</span>
+                <span class="text-sm font-bold text-blue-600 uppercase mb-2 block">Décembre 2025</span>
                 <h3 class="text-2xl font-bold text-gray-800 mb-3">Data Science et Prévention des blessures</h3>
-                
                 <div class="bg-white p-6 rounded-xl shadow-md border border-gray-100 hover:shadow-lg transition">
-                    <p class="text-gray-700 mb-4">
-                        C'est un aspect technique qui touche directement aux compétences SLAM (Algorithmes prédictifs). J'ai étudié un dossier de l'<strong>IMT Atlantique</strong> expliquant comment la Data Science révolutionne la médecine sportive.
+                    <p class="text-gray-700 mb-3">
+                        Approfondissement technique avec un dossier de l'<strong>IMT Atlantique</strong>. Focus sur l'analyse de la "Charge de travail" (Workload) via capteurs GPS.
                     </p>
-                    <ul class="list-disc list-inside text-gray-700 space-y-2 mb-4 bg-blue-50 p-4 rounded-lg">
-                        <li><strong>Collecte :</strong> Utilisation de gilets GPS (Catapult) et accéléromètres.</li>
-                        <li><strong>Traitement :</strong> Analyse de la "Charge de travail" (Workload).</li>
-                        <li><strong>Prédiction :</strong> Si la charge augmente trop vite (>15% par semaine), le risque de blessure musculaire explose.</li>
+                    <ul class="list-disc list-inside text-gray-600 text-sm mb-3">
+                        <li>Algorithmes de détection de fatigue</li>
+                        <li>Seuil de risque : augmentation de charge >15% / semaine</li>
                     </ul>
-                    <a href="https://datascience.wp.imt.fr/2025/01/28/football-professionnel-comment-la-data-science-revolutionne-la-prevention-des-blessures/" target="_blank" class="text-blue-600 hover:underline text-sm break-all">
-                        Source : datascience.wp.imt.fr/football-professionnel-prevention-blessures
-                    </a>
-                </div>
-            </div>
-
-            <div class="relative pl-8 md:pl-12">
-                <div class="absolute -left-3 top-0 bg-green-500 h-6 w-6 rounded-full border-4 border-white shadow"></div>
-                
-                <span class="text-sm font-bold text-green-600 uppercase mb-2 block">Janvier 2026 (Actuel)</span>
-                <h3 class="text-2xl font-bold text-gray-800 mb-3">Synthèse Technique & Outils</h3>
-                
-                <div class="bg-white p-6 rounded-xl shadow-md border-l-4 border-green-500">
-                    <h4 class="font-bold text-gray-800 mb-2">Ce que je retiens pour mon parcours SLAM :</h4>
-                    <p class="text-gray-700 mb-4">
-                        Au-delà du sport, cette veille m'a permis de comprendre l'architecture technique nécessaire pour traiter ces volumes de données (Big Data) :
-                    </p>
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                        <div class="bg-gray-50 p-3 rounded">
-                            <span class="font-bold block text-gray-800">Back-End / Traitement</span>
-                            <span class="text-sm text-gray-600">Python (Pandas, Scikit-Learn) est le langage roi pour créer les modèles prédictifs.</span>
-                        </div>
-                        <div class="bg-gray-50 p-3 rounded">
-                            <span class="font-bold block text-gray-800">Front-End / Viz</span>
-                            <span class="text-sm text-gray-600">Les données sont restituées via des outils comme PowerBI ou Qlik (que j'utilise en entreprise) ou des librairies JS comme D3.js.</span>
-                        </div>
-                    </div>
+                    <a href="https://datascience.wp.imt.fr/2025/01/28/football-professionnel-comment-la-data-science-revolutionne-la-prevention-des-blessures/" target="_blank" class="text-blue-600 hover:underline text-sm font-medium">Source : IMT Atlantique →</a>
                 </div>
             </div>
 
         </div>
 
         <div class="mt-20 pt-10 border-t border-gray-200">
-            <h3 class="text-xl font-bold text-gray-800 mb-6">Sources Principales</h3>
+            <h3 class="text-xl font-bold text-gray-800 mb-6">Sources Consultées</h3>
             <div class="flex flex-col gap-3 text-sm text-gray-600">
-                <div class="flex items-start gap-2">
-                    <span class="text-blue-500 font-bold">[1]</span>
-                    <p>Concept de Sabermétrie - Historique de la data dans le Baseball.</p>
-                </div>
-                <div class="flex items-start gap-2">
-                    <span class="text-blue-500 font-bold">[2]</span>
-                    <a href="https://insights.morganphilips.com/fr/le-role-predominant-de-la-data-dans-le-sport" class="hover:text-blue-600 hover:underline">Morgan Philips - Le rôle prédominant de la data dans le sport</a>
-                </div>
-                <div class="flex items-start gap-2">
-                    <span class="text-blue-500 font-bold">[3]</span>
-                    <a href="https://datascience.wp.imt.fr/2025/01/28/football-professionnel-comment-la-data-science-revolutionne-la-prevention-des-blessures/" class="hover:text-blue-600 hover:underline">IMT Atlantique - Football professionnel : comment la data science révolutionne la prévention des blessures</a>
-                </div>
+                <a href="https://insights.morganphilips.com/fr/le-role-predominant-de-la-data-dans-le-sport" class="hover:text-blue-600">[1] Morgan Philips - Data dans le sport</a>
+                 <a href="#" class="hover:text-blue-600">[2] Sports Interactive / Sega - Base de données Football Manager</a>
+                <a href="https://datascience.wp.imt.fr/2025/01/28/football-professionnel-comment-la-data-science-revolutionne-la-prevention-des-blessures/" class="hover:text-blue-600">[3] IMT Atlantique - Prévention blessures</a>
             </div>
         </div>
 
